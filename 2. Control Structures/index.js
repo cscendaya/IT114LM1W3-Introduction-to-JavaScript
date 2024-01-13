@@ -7,19 +7,41 @@ const randomNumber = Math.floor((Math.random() * 100) + 1); // feel free to mock
 
 // TODO 2.1 Display "more than fifty" if randomNumber is more than fify
 // Your code here
+// console.log(randomNumber)
+// if (randomNumber > 50)
+//     console.log("more than fifty")
+// else return
 
 // TODO 2.2 Display whether the random number is odd or even
 // Your code here
+
+// console.log(randomNumber)
+// if (randomNumber % 2 )
+//     console.log("odd")
+// else if (randomNumber % 0)
+//     console.log("even")
 
 // TODO 2.3 If the number if a multiple of 3, write "fizz".
 // if the number is a multiple of 5 display "buzz".
 // if the number is divisible by both 3 and 5, display "fizzbuzz". otherwise, display the number
 // Your code here
 
-let toDisplay = ""
+// console.log(randomNumber)
+// if (randomNumber % 3 ===0 && randomNumber % 5 === 0)
+//     console.log("fizzbuzz")
+// else if (randomNumber % 3 === 0)
+//     console.log("fizz")
+// else if (randomNumber % 5 === 0)
+//     console.log("buzz")
+// else console.log(randomNumber)
+
+// let toDisplay = ""
+
 // TODO 2.4 Use the ternary conditional operator to set toDisplay to "Even" if randomNumber is even and "Odd" if randomNumber is odd
 // Your code here
-console.log("toDisplay", toDisplay);
+
+// toDisplay = randomNumber % 0 ? "Even" : "Odd"
+// console.log("toDisplay", toDisplay);
 
 // Checkpoint 2.1 How do you use switch statements and when would you use them? Try researching the answer
 // Answer: 
@@ -28,10 +50,18 @@ console.log("toDisplay", toDisplay);
 const n = 10
 // Your code here
 
+// for (let a = 0; a < n; a++ )
+//     console.log(a)
+
 const list = ["apple", "banana", "cherry", "date", "elderberry"];
+
 // TODO 2.6 Use a while loop to display all the values in the list
 // Your code here
 
+var i = 0;
+while (list)
+    i++
+    console.log(i)
 // Checkpoint 2.3 How would you simulate a do-while loop in JavaScript
 // Answer: 
 
