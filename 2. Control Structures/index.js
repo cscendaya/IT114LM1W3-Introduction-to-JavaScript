@@ -82,5 +82,12 @@ while (list)
 const numerator = Math.floor((Math.random() * 100) + 1);
 const denominator = Math.floor((Math.random() * 5)); // feel free to mock this value for testing
 
-const quotient = numerator / denominator;
+
+if(denominator === 0){
+    throw new Error("Division by zero error")
+} else {
+    console.log(numerator / denominator);
+}
+
+
 
