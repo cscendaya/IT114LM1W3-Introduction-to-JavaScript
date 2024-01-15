@@ -10,7 +10,7 @@ var a = 4
 var a = 6
 console.log(a)
 
-consokle.log(abc)
+console.log(abc)
 var abc
 
 

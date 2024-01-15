@@ -58,36 +58,69 @@ const list = ["apple", "banana", "cherry", "date", "elderberry"];
 // TODO 2.6 Use a while loop to display all the values in the list
 // Your code here
 
-var i = 0;
-while (list)
-    i++
-    console.log(i)
+// let i = 0;
+// while (i < list.length){
+//     console.log(list[i])
+//     i++
+// }
+
 // Checkpoint 2.3 How would you simulate a do-while loop in JavaScript
-// Answer: 
+// Answer: to simulate, in the 'do' part will make the process of the execution takes place, and in the while part is the condition for it to stop
+
+// let i = 0
+// do{
+//     console.log(list[i])
+//     i++
+// } while (i < list[i])
 
 // TODO 2.7 Use a for of loop to display all the values in the list
 // Your code here
 
+// for (ofLists of list)
+//     console.log(ofLists)
+
 // TODO 2.8 Use a for in loop to display all the values in the list
 // Your code here
+
+// for (inLists in list)
+//     console.log(inLists)
+
 
 // TODO 2.9 Use the for each method of the list to display all its values 
 // Your code here
 
+// list.forEach(function(forEachList) {
+//     console.log(forEachList)
+// })
+
+  // You can also access the array if needed: console.log(array);
+
+// list.forEach(function(forEachList) {
+//     console.log(forEachList)
+//     console.log(array)
+// })
+
+
 // Checkpoint 2.2 When should you use for of, for in, or .forEach loops? Try researching the answer
-// Answer: 
+// Answer: for of - to iterate object values such as in arrays, strings, maps, sets etc. - it skips non-enumerable properties
+        // for in - to iterate generic object properties including inherited ones - cannot use for arrays 
+        // for each - to iterate specifically on arrays if doesn't need to break out of loop during the process
 
 // TODO 2.10 Use the try and catch block to catch division by zero errors in the code below.
 // In the finally block, simulate cleaning up resources by displaying "cleaning up resources"
 const numerator = Math.floor((Math.random() * 100) + 1);
 const denominator = Math.floor((Math.random() * 5)); // feel free to mock this value for testing
 
-
-if(denominator === 0){
-    throw new Error("Division by zero error")
-} else {
-    console.log(numerator / denominator);
+try{
+    if(denominator === 0){
+        throw new Error("Division by zero error")
+    } else {
+        console.log(numerator / denominator);
+    }
 }
-
-
-
+catch (error) {
+    console.error(error)
+}
+finally {
+    console.log("Cleaning up resources")
+}
