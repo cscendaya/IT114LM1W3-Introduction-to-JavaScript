@@ -55,16 +55,44 @@
 // Useful Tutorial: https://youtu.be/H4awPsyugS0?si=7wC1B7whXVkG8X5l
 // Your code here
 
+// function modifyArray(array, modifierFunction) {
+//     return array.map(modifierFunction);
+//   }
+  
+//   let numbers = [1, 2, 3, 4, 5];
+  
+//   function incrementByOne(num) {
+//     return num + 1;
+//   }
+  
+//   let modifiedNumbers = modifyArray(numbers, incrementByOne);
+  
+//   console.log("Original:", numbers);
+//   console.log("Modified:", modifiedNumbers);
+
 // Todo 4.4 See mathUtils.js for the instructions to create the add method and PI constant.
 // Then, import and call the add method here and display the value of the PI constant
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
+
+// import { add, PI} from './mathUtils.js'
+
+// console.log(add(2,3), PI)
 
 // Todo 4.5 See isPalindrome.js for the instructions to create the isPalindrome method.
 // Then, import and call the isPalindrome method here
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
 
+import isPalindrome from './isPalindrome.js'
+console.log(isPalindrome("anna"))
+
 // Checkpoint 4.3 What does the require function and module.exports variable do?
 // Should we use it over the import and export keywords? Why? Research your answer.
-// Answer: 
+// Answer: require function & module.exports variable - it has import/export functionality
+            //they are part of CommonJS module system used in Node.js
+
+            //It will depend on the environment and project requirements, however, it is 
+            //more suggested to use import and export due to their compatibility with modern
+            //javascript, ECMAScript Modules, and modern browsers like Babel
+            //it is also the standard for frontend development
