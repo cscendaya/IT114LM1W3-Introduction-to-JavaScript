@@ -83,9 +83,15 @@ for (const properties in IT114L) {
 // console.log("numbers array with additional 100: ", copiedNumber);
 
 // Todo 3.7 Going back to your IT114L object, extract the course code and units using the spread operator
+// extract the course code and units using object destructuring
 // Your code here
 
-const { courseCode: IT114LCourseCode, units: IT114LUnits, ...otherInfo } = IT114L;
-console.log("IT114L Course Code:", IT114LCourseCode);
-console.log("IT114L Units:", IT114LUnits);
-console.log("Other Info:", otherInfo);
+// const { courseCode: IT114LCourseCode, units: IT114LUnits, ...otherInfo } = IT114L;
+// console.log("IT114L Course Code:", IT114LCourseCode);
+// console.log("IT114L Units:", IT114LUnits);
+// console.log("Other Info:", otherInfo);
+
+const { courseCode, name } = IT114L
+
+console.log("Course Code:", courseCode)
+console.log("Name:", name)
