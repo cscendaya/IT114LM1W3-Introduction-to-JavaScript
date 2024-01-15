@@ -9,17 +9,48 @@
 // Then, Call the 'greet' function with your name as the argument
 // Your code here
 
+// function greet(name) {
+//     console.log("Hello", name)
+// }
+// greet("Carlie")
+
 // Checkpoint 4.1 What is the difference between a function declaration and a function expression?
-// Answer: 
+// Answer: function declaration -  uses 'function' keyword with a name, can be called before the declaration (hoisted)
+                //function myFunction() { }
+         // function expression - assigns function a variable, not hoisted.
+                //const myFunction = function() { }
 
 // Todo 4.2 Declare a function expression named 'calculateArea' that takes the length and width of a rectangle and returns its area
 // Then, Call the 'calculateArea' function with any length and width as arguments
 // Your code here
 
-// Checkpoint 4.2 What is a callback function? Provide an example.
-// Answer: 
+// Declare a function expression named 'calculateArea' that takes the length and width of a rectangle and returns its area
 
-// Todo 4.3 Declare a higher-order function named 'modifyArray' that takes an array and a function as parameters. The function should modify each element in the array using the provided function and return the modified array.
+// const calculateArea = function(length, width) {
+//     return length * width;
+// };
+
+// Call the 'calculateArea' function with any length and width as arguments
+
+// const area = calculateArea(4, 8);
+// console.log("Area:", area);
+
+
+// Checkpoint 4.2 What is a callback function? Provide an example.
+// Answer:  a function that you pass as an argument to another function, and it gets executed inside that other function.
+
+// hello(goodbye);
+
+// function hello(callback){
+//     console.log("Hello");
+//     callback();
+// }
+
+// function goodbye(){
+//     console.log("Goodbye");
+// }
+// Todo 4.3 Declare a higher-order function named 'modifyArray' that takes an array and a function as parameters. 
+//The function should modify each element in the array using the provided function and return the modified array.
 // Then, Call the 'modifyArray' function with the 'numbers' array and a function that increments each number by 1
 // Useful Tutorial: https://youtu.be/H4awPsyugS0?si=7wC1B7whXVkG8X5l
 // Your code here
